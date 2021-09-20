@@ -1,17 +1,14 @@
-## Notes
+## Fr-Furniture e-commerce website
 
-#### Older React Version
+This is a simple React e-commerce project with full payment process. Usser can log in/log out
+sort products, add/remove product from the cart.
+The project is created with function components and react hooks
 
-```
-"react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-scripts": "3.4.3",
-```
-
-#### Current React Version
-
-```
-"react": "^17.0.1",
-"react-dom": "^17.0.1",
-"react-scripts": "4.0.0",
-```
+### Technologies: 
+Project is created with: 
+  * React
+  * Auth0
+  * Stripe
+  * React Hooks
+  * Styled-components
+  
