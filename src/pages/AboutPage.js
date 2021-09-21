@@ -5,7 +5,6 @@ import aboutImg from '../assets/hero-bcg2.jpeg'
 const AboutPage = () => {
   return (
     <main>
-      {/* <PageHero title='about'/> */}
       <Wrapper className="page section section-center">
         <img src={aboutImg} alt="desk"/>
         <article>
@@ -13,7 +12,7 @@ const AboutPage = () => {
             <h2>Our Story</h2>
             <div className="underline"></div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in, sapiente doloribus exercitationem assumenda necessitatibus repellat porro magnam ipsam ab sint numquam facere, architecto impedit nulla quia tenetur totam placeat!</p>
+          <p>Our story started with a problem (the best ideas usually do). Some ten years ago, our founder was furnishing his flat. Frustrated at the lack of well-designed, good quality and affordable sofas, he set about redefining the process. The concept was clear: collaborate with independent designers and makers to create pieces you’ll love, minus the mark-up. And so FR was born. The destination for creating your dream home.</p>
         </article>
       </Wrapper>
   </main>
@@ -23,17 +22,18 @@ const AboutPage = () => {
 const Wrapper = styled.section`
   display: grid;
   gap: 4rem;
+  margin: 7rem auto;
   img {
     width: 100%;
     display: block;
     border-radius: var(--radius);
-    height: 500px;
+    
     object-fit: contain;
   }
   p {
     line-height: 2;
     max-width: 45em;
-    margin: 0 auto;
+    
     margin-top: 2rem;
     color: var(--clr-grey-5);
   }

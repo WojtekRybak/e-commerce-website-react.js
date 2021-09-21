@@ -9,7 +9,7 @@ import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
 
 
-const Nav = () => {
+const Navbar = () => {
   const {openSidebar} = useProductsContext();
   const {myUser} = useUserContext();
 
@@ -84,7 +84,7 @@ const NavContainer = styled.nav`
   .cart-btn-wrapper {
     display: none;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 1002px) {
     .nav-toggle {
       display: none;
     }
@@ -116,4 +116,4 @@ const NavContainer = styled.nav`
   }
 `
 
-export default Nav
+export default Navbar

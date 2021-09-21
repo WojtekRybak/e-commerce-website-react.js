@@ -1,6 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import { services } from '../utils/constants'
+import React from 'react';
+import styled from 'styled-components';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import { services } from '../utils/constants';
+
 
 const Services = () => {
   return (
@@ -10,17 +15,17 @@ const Services = () => {
         <h3>Custom Furniture<br/>
             built only for you
         </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ex ea nihil qui distinctio esse maiores, ipsam doloribus quasi obcaecati!</p>
+        <p>We sell expertly curated brands that have the same thing in common: they are passionate about producing high quality, innovative and modern design.</p>
       </article>
       <div className="services-center">
         {services.map((service)=>{
           const {id, icon,title,text} = service;
           return (
-            <article key={id} className="service">
+            <Card key={id} className="service">
               <span className="icon">{icon}</span>
-              <h4>{title}</h4>
-              <p>{text}</p>
-            </article>
+              <Typography variant="h5">{title}</Typography>
+              <Typography>{text}</Typography>
+            </Card>
           )
         })}
       </div>
@@ -52,7 +57,7 @@ const Wrapper = styled.section`
     gap: 2.5rem;
   }
   .service {
-    background: var(--clr-primary-7);
+    background: var(--clr-grey-9);
     text-align: center;
     padding: 2.5rem 2rem;
     border-radius: var(--radius);

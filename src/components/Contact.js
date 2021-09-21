@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="section-center">
           <h3>Join our newsletter and get 20% off</h3>
           <div className="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem atque facere officia? Aspernatur itaque, deserunt molestiae voluptas earum asperiores.</p>
+            <p>Sign up for our emails and enjoy hearing about all things design.</p>
             <form action="https://formspree.io/f/mqkgnelr" method="POST"  className="contact-form">
               <input type="email" className="form-input"placeholder="email" name="_replyto"/>
               <button type="submit" className="submit-btn">Subscribe</button>
@@ -56,7 +56,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: var(--clr-grey-6);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
