@@ -58,7 +58,7 @@ const NavContainer = styled.nav`
     width: 90vw;
     margin: 0 auto;
     max-width: var(--max-width);
-    border-bottom : 1px solid #343434;
+    
   }
   .nav-header {
     display: flex;

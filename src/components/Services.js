@@ -15,7 +15,6 @@ const Services = () => {
         <h3>Custom Furniture<br/>
             built only for you
         </h3>
-        <p>We sell expertly curated brands that have the same thing in common: they are passionate about producing high quality, innovative and modern design.</p>
       </article>
       <div className="services-center">
         {services.map((service)=>{
@@ -38,6 +37,7 @@ const Wrapper = styled.section`
   h3,
   h4 {
     color: #102A42;
+    margin: auto;
   }
   padding: 5rem 0;
 
@@ -81,8 +81,7 @@ const Wrapper = styled.section`
   }
   @media (min-width: 992px) {
     .header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
     }
   }
   @media (min-width: 576px) {

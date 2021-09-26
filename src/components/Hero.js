@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
+import hero from '../assets/hero-main.jpg'
 
 const Hero = () => {
   return <Wrapper className="section-center borderTop">
@@ -10,32 +10,30 @@ const Hero = () => {
       <p>Add a touch of class and sophistication to your home with our beautiful, handcrafted chesterfield sofas.</p>
       <Link to='/products' className='btn hero-btn'>Shop Now</Link>
     </article>
-    <article className="img-container">
-      <img src={heroBcg} alt="table" className="main-img"/>
-    </article>
   </Wrapper>
 }
 
 const Wrapper = styled.section`
-  min-height: 80vh;
-  display: grid;
-  place-items: center;
-  .img-container {
-    display: none;
-  }
-
+  background-image: url(${hero});
   
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-position: center;
   p {
     line-height: 2;
-    max-width: 45em;
+    max-width: 46em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
+    color: var(--clr-grey-2);
     font-size: 1rem;
   }
+  .content {
+      margin-left: 2rem;
+    }
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
     h1 {
       margin-bottom: 2rem;
     }
@@ -46,36 +44,6 @@ const Wrapper = styled.section`
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
     }
-    .img-container {
-      display: block;
-      position: relative;
-    }
-    .main-img {
-      width: 100%;
-      height: 550px;
-      position: relative;
-      border-radius: var(--radius);
-      display: block;
-      object-fit: contain;
-    }
-    .accent-img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 250px;
-      transform: translateX(-50%);
-      border-radius: var(--radius);
-    }
-    /* .img-container::before {
-      content: '';
-      position: absolute;
-      width: 10%;
-      height: 80%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
-    } */
   }
 `
 
